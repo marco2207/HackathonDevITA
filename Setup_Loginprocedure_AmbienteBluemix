@@ -1,0 +1,24 @@
+1) ——> Install Bluemix CLI 
+
+http://clis.ng.bluemix.net/ui/home.html
+
+2) --> Login to Bluemix using your preferred region (US, Germany, UK, Sydney)
+
+bx login -a https://api.ng.bluemix.net
+			      https://api.eu-de.bluemix.net
+		      	https://api.eu-gb.bluemix.net
+			      https://api.au-syd.bluemix.net
+
+3) --> Set organization and space 
+
+    bx target -o Your_ORG -s Your_SPACE
+            
+4) —> Check installed plugin, install if necessary 
+  
+    bx plugin list
+    if (empty or container service not installed execute command below)
+      bx plugin install container-service
+
+5) —> Initialize container service
+
+    bx cs init

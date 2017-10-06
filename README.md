@@ -56,9 +56,13 @@ I comandi da eseguire per creare i Deployments sono i seguenti (dalla directory 
   
   i) infine aprendo il browser alla pagina costituita dall'indirizzo IP e la porta ottenuti ai punti (f) e (g) vi apparira' il setup di Drupal. 
   
-  La mia istanza sul cluster Kubernetes in Germania e' la seguente:
+  # La mia istanza Drupal sul cluster Kubernetes in Germania e' la seguente:
   
   http://169.51.8.40:30380 (user:Marco, pwd: passw0rd)
+  
+  # La mia istanza WordPress sul cluster Kubernetes in Germania e' la seguente:
+  
+  http://169.51.8.40:30180 (user:Marco, pwd: passw0rd)
 
 
 Tutti coloro che ne faranno richiesta possono agire in 2 modi:

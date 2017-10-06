@@ -58,11 +58,15 @@ I comandi da eseguire per creare i Deployments sono i seguenti (dalla directory 
   
   # La mia istanza Drupal sul cluster Kubernetes in Germania e' la seguente:
   
-  http://169.51.8.40:30380 (user:Marco, pwd: passw0rd)
+  http://169.51.8.40:30380 (user:Marco, pwd:passw0rd)
   
   # La mia istanza WordPress sul cluster Kubernetes in Germania e' la seguente:
   
-  http://169.51.8.40:30180 (user:Marco, pwd: passw0rd)
+  http://169.51.8.40:30180 (user:Marco, pwd:passw0rd)
+  
+  # La mia istanza SPID Identity Server sul cluster Kubernetes in Germania e' la seguente:
+  
+  https://169.51.8.40:30280 (user:admin, pwd:admin)
 
 
 Tutti coloro che ne faranno richiesta possono agire in 2 modi:

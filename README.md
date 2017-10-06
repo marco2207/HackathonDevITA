@@ -58,7 +58,7 @@ I comandi da eseguire per creare i Deployments sono i seguenti (dalla directory 
   
   La mia istanza sul cluster Kubernetes in Germania e' la seguente:
   
-  http://169.51.8.40:30380
+  http://169.51.8.40:30380 (user:Marco, pwd: passw0rd)
 
 
 Tutti coloro che ne faranno richiesta possono agire in 2 modi:

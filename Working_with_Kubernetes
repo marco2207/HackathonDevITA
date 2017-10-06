@@ -1,0 +1,22 @@
+1) —> Download Kubectl command (instruction for MAC OSx)
+  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
+
+2) —> Move and change permission
+  mv /<path_to_file>/kubectl /usr/local/bin/kubectl
+  chmod +x /usr/local/bin/kubectl
+
+3) —> Get your cluster info (execute from a shell where a login to Bluemix has been executed) and set variable 
+  bx cs clusters
+  bx cs cluster-config “Your cluster ID”
+
+4) —> Set cluster variable executing the following command using your data obtained from previous command
+  export KUBECONFIG=/Users/marco/.bluemix/plugins/container-service/clusters/8d6a84c9545249a7a9683bb493314a12/kube-config-prod-dal10-myDemocluster.yml
+
+
+5) —> Check if it is working correctly
+  kubectl version --short
+
+6) —> Launch Kubernetes UI
+  kubectl proxy
+
+  —> Access it through http://localhost:8001/ui

@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spid-bck
+  labels:
+    app: spid-bck
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30480
+  selector:
+    app: spid-bck
+    tier: frontend
+  type: NodePort
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: spid-bck
+  labels:
+    app: spid-bck
+spec:
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: spid-bck
+        tier: frontend
+    spec:
+      containers:
+      - image: italia/spid-testenv-backoffice:latest
+        name: spid-bck
+        ports:
+        - containerPort: 9443
+          name: spid-bck

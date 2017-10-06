@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: drupal
+  labels:
+    app: drupal
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30380
+  selector:
+    app: drupal
+    tier: frontend
+  type: NodePort
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: drupal
+  labels:
+    app: drupal
+spec:
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: drupal
+        tier: frontend
+    spec:
+      containers:
+      - image: drupal
+        name: drupal
+        ports:
+        - containerPort: 9443
+          name: drupal

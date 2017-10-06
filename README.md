@@ -3,6 +3,11 @@
 # Apertura account Bluemix seguire link sottostante:
 
         http://ibm.biz/BMcom16
+        
+Tutti gli sviluppatori faranno richiesta possono agire in 2 modi:
+
+-metodo 1 preferibile : aprire un account Bluemix e creare con loro quanto serve
+-metodo 2 creare un utente sui nostri ambienti e fargli utilizare i nostri cluster
 
 # Creazione di un deployment Kubernetes per i seguenti elementi:
 
@@ -67,9 +72,7 @@ I comandi da eseguire per creare i Deployments sono i seguenti (dalla directory 
   # La mia istanza SPID Identity Server sul cluster Kubernetes in Germania e' la seguente:
   
   https://169.51.8.40:30280 (user:admin, pwd:admin)
-
-
-Tutti coloro che ne faranno richiesta possono agire in 2 modi:
-
--metodo 1 preferibile : aprire un account Bluemix e creare con loro quanto serve
--metodo 2 creare un utente sui nostri ambienti e fargli utilizare i nostri cluster
+  
+  # La mia istanza SPID Backoffice Server sul cluster Kubernetes in Germania e' la seguente:
+  
+  https://169.51.8.40:30480 (nessuna credenziale richiesta)

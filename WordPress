@@ -1,3 +1,12 @@
-Al link seguente trovate tutte le istruzioni per impostare un cluster Kubernes di WordPress
+Al link seguente trovate tutte le istruzioni per impostare un cluster Kubernes di WordPress.
+
+# Prerequisito download del progetto github (al link sottostante) e creazione del file password.txt
 
 https://github.com/IBM/scalable-wordpress-deployment-on-kubernetes?cm_sp=IBMCode-_-scalable-wordpress-on-kubernetes-_-Get-the-Code&cm_mc_uid=68199098528415021360169&cm_mc_sid_50200000=1506948655
+
+I passi da seguire sono i seguenti (dalla directory in cui avete estratto il progetto sopra):
+
+--> kubectl create -f local-volumes.yaml
+--> kubectl create secret generic mysql-pass --from-file=password.txt
+--> kubectl create -f mysql-deployment.yaml
+--> kubectl create -f wordpress-deployment.yaml
